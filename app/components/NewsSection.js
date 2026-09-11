@@ -43,8 +43,8 @@ export default function NewsSection() {
             <div className="news-feature-index">01</div>
 
             <div className="news-feature-content">
-              <span className="news-feature-label">// LATEST TRANSMISSION</span>
-              {/* 
+              {/* <span className="news-feature-label">// LATEST TRANSMISSION</span>
+              
               <div className="news-feature-title">
                 Introducing the CD Projekt Red Creators &amp; Ambassadors
                 Program!
