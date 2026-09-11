@@ -274,7 +274,7 @@ input {
 }
 .review:before,
 .review:after {
-  content: "\\";
+  content: "(";
   position: absolute;
   top: 0;
   font-size: 26px;
@@ -713,5 +713,61 @@ input {
   }
   .footer-links {
     gap: 15px;
+  }
+}
+.hero-art {
+  animation: cyberpunk-glitch 5s infinite;
+  will-change: transform, clip-path, filter;
+  -webkit-animation: cyberpunk-glitch 5s infinite;
+}
+
+@keyframes cyberpunk-glitch {
+  /* NORMAL */
+  0%,
+  88%,
+  100% {
+    transform: translate3d(0, 0, 0);
+    clip-path: inset(0 0 0 0);
+    filter: none;
+  }
+
+  /* GLITCH START */
+  89% {
+    transform: translate3d(-1px, 0, 0);
+    clip-path: inset(12% 0 80% 0);
+    filter: contrast(1.04) brightness(1.02);
+  }
+
+  89.4% {
+    transform: translate3d(2px, 0, 0);
+    clip-path: inset(35% 0 58% 0);
+  }
+
+  89.8% {
+    transform: translate3d(-2px, 0, 0);
+    clip-path: inset(65% 0 28% 0);
+    filter: contrast(1.06);
+  }
+
+  90.2% {
+    transform: translate3d(2px, 0, 0);
+    clip-path: inset(48% 0 42% 0);
+  }
+
+  90.6% {
+    transform: translate3d(-1px, 0, 0);
+    clip-path: inset(20% 0 68% 0);
+    filter: contrast(1.04);
+  }
+
+  91% {
+    transform: translate3d(1px, 0, 0);
+    clip-path: inset(73% 0 18% 0);
+  }
+
+  91.4% {
+    transform: translate3d(0, 0, 0);
+    clip-path: inset(0 0 0 0);
+    filter: none;
   }
 }
